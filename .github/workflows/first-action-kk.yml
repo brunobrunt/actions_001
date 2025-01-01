@@ -1,0 +1,10 @@
+# This is a basic workflow to help you get started with Actions
+
+name: My very first workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Print greeting
+        run: echo "Welcome to GitHub action workflow"
