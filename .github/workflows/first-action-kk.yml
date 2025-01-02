@@ -6,6 +6,8 @@ jobs:
   first-job:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
       - name: Print greeting
         run: echo "Welcome to GitHub action workflow"
       - name: List files
