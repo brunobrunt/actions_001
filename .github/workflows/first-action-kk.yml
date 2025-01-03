@@ -8,9 +8,13 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
-      - name: Print greeting
-        run: echo "Welcome to GitHub action workflow"
-      - name: List files
-        run: ls -a
-      - name: Read file
-        run: cat README.md
+      - name: List and Read files
+        run: |   # This is a multiline command by using a pipe (|)
+          echo "Welcome to GitHub action workflow"
+          ls -ltra
+          cat README.md
+      - name: Generate ASCII Art
+        run: cowsay -f "Run for cover, I am a DRAGON......RAWRRRR" >> dragon.txt
+    #    run: ls -a
+    #  - name: Read file
+    #    run: cat README.md
