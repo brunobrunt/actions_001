@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
   # Install cowsay Program
     sudo apt-get install cowsay y
       
