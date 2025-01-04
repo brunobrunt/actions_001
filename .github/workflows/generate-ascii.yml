@@ -10,8 +10,8 @@ jobs:
       - name: Execute Cowsay CMD
         run: cowsay -f dragon "Run for cover, I am a DRAGON......RAWRRRR" >> dragon.txt
       
-      - name: Sleep for 30 seconds
-        run:  sleep 30
+      - name: Sleep for 20 seconds
+        run:  sleep 20
 
   test_job_2:
     needs: build_job_1
